@@ -1,0 +1,146 @@
+/* Styling for a specific TextField with an ID */
+#myTextField {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 5px;
+    -fx-border-color: #a0a0a0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Styling for all TextFields in the application */
+.text-field1 {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 5px;
+    -fx-border-color: #a0a0a0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 6px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+/* Styling for all focused TextFields in the application */
+.text-field1:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #4d90fe;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 6px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.text-field {
+    -fx-font-size: 0.875em;
+    -fx-padding: 3 7 2 7;
+    -fx-border-color: linear-gradient(to bottom, #aaaaaa 0%, #666666 30%);
+    -fx-border-radius: 9;
+    -fx-border-insets: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0.02);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 11;
+}
+
+.text-field:hover {
+    -fx-border-color: linear-gradient(to bottom, #aaaaaa 30%, #666666 60%); /* Change border color on hover */
+    -fx-background-color: rgba(0, 0, 0, 0.05); /* Change background color on hover */
+}
+
+/* Styling for a specific CheckBox with an ID */
+#myCheckBox {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+/* Styling for a specific CheckBox with an ID */
+#myCheckBox {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+/* Styling for all CheckBoxes in the application */
+.check-box {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555555;
+}
+
+/* Styling for all selected (checked) CheckBoxes in the application */
+.check-box:selected {
+    -fx-background-color: #4CA050; /* Background color when selected */
+    -fx-border-color: #4CAF50; /* Border color when selected */
+    -fx-text-fill: white; /* Text color when selected */
+}
+
+/* Styling for the check mark inside the CheckBox */
+.check-box .box {
+    -fx-background-color: #4CAF50; /* Color of the check mark */
+    -fx-border-color: #4CAF90; /* Border color of the check mark */
+}
+
+/* Hover effect for CheckBoxes */
+.check-box:hover {
+    -fx-background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Add this to your CSS file or apply styles directly in Java code */
+
+.choice-box > .arrow-button {
+    -fx-background-color: #2ecc71; /* Green color for the arrow button */
+}
+
+.choice-box > .box {
+    -fx-border-color: #2ecc71; /* Green color for the choice box border */
+}
+
+.choice-box > .label {
+    -fx-text-fill: #2ecc71; /* Green color for the text inside the choice box */
+}
+
+.choice-box .menu {
+    -fx-background-color: #34495e; /* Background color for the dropdown menu */
+    -fx-text-fill: white; /* Text color for the items in the dropdown menu */
+}
+
+.rounded-pane {
+    -fx-background-radius: 10px; /* Adjust the radius as needed */
+    -fx-background-color: white; /* Set your desired background color */
+}
+
+.quitIcon {
+    -fx-icon-color: #797373a6;
+}
+
+.quitIcon:hover {
+    -fx-icon-color: #ff0000; /* Change the color on hover to red (adjust as needed) */
+}
+
+.minIcon {
+    -fx-icon-color: #797373a6;
+}
+
+.minIcon:hover {
+    -fx-icon-color: #2b272f; /* Change the color on hover to red (adjust as needed) */
+}
+
+.topMenuBar {
+    -fx-background-color: #f0f0f0; /* Set the default background color */
+}
+
+.topMenuBar:hover {
+    -fx-background-color: #e0e0e0; /* Change the background color on hover (adjust as needed) */
+}
+
+.mainFxmlClass {
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-color: #FC3D44;
+}
+.mainFxmlClass1 {
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+}
+

@@ -1,0 +1,37 @@
+/* styles.css */
+
+#treeView {
+    -fx-background-color: #f5f5f5; /* Light gray background */
+    -fx-border-color: #ddd; /* Light border color */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+.tree-cell {
+    -fx-text-fill: #333333; /* Dark text color for tree items */
+    -fx-background-color: #f9f9f9; /* Slightly lighter background for tree items */
+    -fx-padding: 6 10 6 10; /* Padding for tree items */
+    -fx-background-insets: 0, 0 0 1 0; /* Bottom border for tree items */
+    -fx-border-radius: 0 0 0 10;
+    -fx-background-radius: 0 0 0 10;
+}
+
+.tree-cell:hover {
+    -fx-background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+.tree-cell:selected {
+    -fx-background-color: #2196f3; /* Blue background for selected tree items */
+    -fx-text-fill: white; /* White text for selected tree items */
+}
+
+.tree-cell:expanded > .tree-disclosure-node {
+    -fx-background-color: transparent; /* Transparent disclosure node background */
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-mark-color; /* Default arrow color for expanded items */
+}
+
+.tree-cell:expanded > .tree-disclosure-node > .arrow:hover {
+    -fx-background-color: -fx-hover-base; /* Arrow color on hover for expanded items */
+}

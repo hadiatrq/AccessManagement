@@ -1,0 +1,47 @@
+.mainStage {
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+    /*-fx-border-radius: 20 20 20 20;*/
+}
+
+.topBar {
+    /*-fx-background-color: #00ffab;*/
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+}
+
+.right-side {
+    -fx-background-radius: 0 0 10 0;
+    -fx-border-radius: 0 0 10 0;
+}
+
+.left-side {
+    -fx-background-radius: 0 0 0 10;
+    -fx-border-radius: 0 0 0 10;
+}
+
+.split-pane {
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-radius: 0 0 10 10;
+}
+.split-pane .column{
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-radius: 0 0 10 10;
+}
+
+.mainStage20 {
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-radius: 20 20 20 20;
+    /*-fx-border-radius: 20 20 20 20;*/
+}
+
+.topBar20 {
+    /*-fx-background-color: #00ffab;*/
+    -fx-background-radius: 20 20 0 0;
+    -fx-border-radius: 20 20 0 0;
+}
+
+.split-pane20 {
+    -fx-background-radius: 0 0 20 20;
+    -fx-border-radius: 0 0 20 20;
+}

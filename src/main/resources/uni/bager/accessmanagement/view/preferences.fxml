@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ToggleSwitch?>
+
+<TabPane fx:id="topPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#handleMouseDragged" onMousePressed="#handleMousePressed" prefHeight="380.0" prefWidth="400.0" styleClass="mainStage" stylesheets="@../style/main-stage.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uni.bager.accessmanagement.controller.PreferencesController">
+    <Tab text="Search">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                    <ToggleSwitch fx:id="lazyFlag" layoutX="258.0" layoutY="86.0" prefHeight="18.4" prefWidth="121.6" text="Lazy Loading" />
+                    <Separator layoutX="20.0" layoutY="152.0" prefWidth="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                    <Separator layoutX="20.0" layoutY="40.0" prefWidth="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                    <Label layoutX="27.0" layoutY="58.0" prefHeight="74.0" prefWidth="202.0" text="Enable Lazy Loading in Directory Browser(This option recommended in large count of files)" textAlignment="JUSTIFY" wrapText="true">
+                        <font>
+                            <Font name="Segoe UI" size="13.0" />
+                        </font>
+                    </Label>
+                    <ToggleSwitch fx:id="fullFetchFlag" layoutX="258.0" layoutY="217.0" prefHeight="18.4" prefWidth="121.6" text="Full Fetch" />
+                    <Label layoutX="27.0" layoutY="184.0" prefHeight="102.0" prefWidth="192.0" text="Enable Full Fetch Loading in Direcotry Browser (This option recommended in normal count of files, Uses Cache mechanism to act more efficient in other inputs" textAlignment="JUSTIFY" wrapText="true">
+                        <font>
+                            <Font name="Segoe UI" size="13.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="20.0" layoutY="5.0" prefHeight="30.0" prefWidth="138.0" text="Path Input Manager">
+                        <font>
+                            <Font name="Segoe UI Bold" size="13.0" />
+                        </font>
+                    </Label>
+                    <ButtonBar buttonMinWidth="40.0" layoutY="325.0" maxHeight="36.0" opacity="0.86" prefHeight="36.0" style="-fx-background-color: #d8d8d8; -fx-border-color: #c0c0c0;" styleClass="split-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <buttons>
+                            <Button mnemonicParsing="false" onAction="#onCancelButton" text="Cancel" />
+                            <Button mnemonicParsing="false" onAction="#onApplyButton" text="Apply" />
+                        </buttons>
+                        <padding>
+                            <Insets right="10.0" />
+                        </padding>
+                    </ButtonBar>
+                </children>
+            </AnchorPane>
+        </content>
+    </Tab>
+    <Tab text="Tab 2">
+        <content>
+            <AnchorPane prefHeight="180.0" prefWidth="200.0" />
+        </content>
+    </Tab>
+</TabPane>
