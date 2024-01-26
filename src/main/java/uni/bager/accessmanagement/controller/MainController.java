@@ -107,7 +107,7 @@ public class MainController implements Initializable {
         String path = pathTextArea.getText();
         path = pathFormat(path);
         File rootFile = new File(path);
-        if (rootFile.exists() && rootFile.isDirectory()) {
+        if (rootFile.exists()) {
             String finalPath = path;
 
             Platform.runLater(() -> spinner.setVisible(true));
