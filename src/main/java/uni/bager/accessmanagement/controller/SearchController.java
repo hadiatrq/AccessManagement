@@ -1,5 +1,6 @@
 package uni.bager.accessmanagement.controller;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -110,6 +111,6 @@ public class SearchController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         name.setCellValueFactory(cellData -> cellData.getValue().getName());
         cap.setCellValueFactory(cellData -> cellData.getValue().getCaption());
-        list = getObservableUsersList();
+        Platform.runLater(() -> list = getObservableUsersList());
     }
 }
