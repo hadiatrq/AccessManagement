@@ -8,9 +8,7 @@ If you want to re-add it for your experiments, click + to create a new topic, ch
 The main layer of application
 
 
-<kdd>
-<img src="media/images/main.png" border="rounded" alt="main">
-</kdd>
+<img src="media/images/main.png" alt="main" style="border-radius: 10px">
 
 
 ### We have three section in this page:
@@ -27,22 +25,16 @@ The main layer of application
 
 You can add new rules, search users and do some settings in preferences:
 
-<kdd>
-<img src="media/images/file_menu_expand.png" border="rounded" alt="file_menu_expand">
-</kdd>
+<img src="media/images/file_menu_expand.png" style="border-radius: 10px" alt="file_menu_expand">
 
 Also, you can get some info about special permission in Help item:
 
-<kdd>
-<img src="media/images/help_menu_expand.png" border="rounded" alt="help_menu_expand">
-</kdd>
+<img src="media/images/help_menu_expand.png" style="border-radius: 10px" alt="help_menu_expand">
 
 ## Add New Rule
 Go to `File | New Rule`.
 
-<kdd>
-<img src="media/images/add_new_rule.png" border="rounded" alt="add_new_rule">
-</kdd>
+<img src="media/images/add_new_rule.png" style="border-radius: 10px" alt="add_new_rule">
 
 - By default, the selected item in Directory Browser set into Path, but you can change it
 - The Username must be entered with domain e.g. (domain\username)
@@ -55,9 +47,7 @@ Go to `File | New Rule`.
 ## User Search
 Go to `File | Search`.
 
-<kdd>
-<img src="media/images/user_search.png" border="rounded" alt="user_search">
-</kdd>
+<img src="media/images/user_search.png" style="border-radius: 10px" alt="user_search">
 
 
 In the search page you search users by typing their Username 
@@ -67,9 +57,7 @@ In the search page you search users by typing their Username
 Go to `File | Preferences`.
 
 
-<kdd>
-<img src="media/images/preferences.png" border="rounded" alt="preferences">
-</kdd>
+<img src="media/images/preferences.png" style="border-radius: 10px" alt="preferences">
 
 
 ### Two Algorithms Implemented for Directory Tree
@@ -91,9 +79,7 @@ By default, Full Fetch is Enable
 ## About Rules
 Go to `Help | About Rules`.
 
-<kdd>
-<img src="media/images/about_rules.png" border="rounded" alt="about_rules">
-</kdd>
+<img src="media/images/about_rules.png" alt="about_rules" style="border-radius: 10px">
 
 
 This table shows the group of special permissions
