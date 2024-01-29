@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact name="AccessManagement:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AccessManagement_jar</output-path>
+    <root id="root">
+      <element id="archive" name="AccessManagement.jar">
+        <element id="module-output" name="AccessManagement" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/controlsfx/controlsfx/11.2.0/controlsfx-11.2.0.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21/javafx-base-21-win.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21/javafx-controls-21-win.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21/javafx-controls-21.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21/javafx-base-21.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21/javafx-graphics-21-win.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21/javafx-fxml-21-win.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21/javafx-fxml-21.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21/javafx-graphics-21.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

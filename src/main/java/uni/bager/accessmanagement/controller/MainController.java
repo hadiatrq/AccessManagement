@@ -462,4 +462,84 @@ public class MainController implements Initializable {
         TogglesData.getInstance().setLazy(false);
         TogglesData.getInstance().setFull(true);
     }
+/*
+    private void pox() {
+        new Thread(() -> {
+            Set<String> entrySet = new HashSet<>();
+            List<String> pathList = new ArrayList<>();
+            buildDirectoryTree(pathList, new File(pathTextArea.getText()));
+            pathList.forEach(path -> MainController.getAccessControlRule(Paths.get(path)).forEach(accessControlEntry -> {
+                System.out.println(accessControlEntry.getPrincipal());
+                entrySet.add(accessControlEntry.getPrincipal());
+            }));
+
+            Platform.runLater(() -> {
+                System.out.println("----------------------------------------------");
+                entrySet.forEach(System.out::println);
+            });
+        }).start();
+    }
+
+    private static <T> void printTreeItem(TreeItem<T> item, int depth) {
+        if (item != null) {
+            // Print the current item's value with indentation
+            printIndent(depth);
+            System.out.println("├─" + item.getValue());
+
+            // Recursively print the children
+            int numChildren = item.getChildren().size();
+            for (int i = 0; i < numChildren; i++) {
+                TreeItem<T> child = item.getChildren().get(i);
+                printTreeItem(child, depth + 1);
+            }
+        }
+    }
+
+    private static void printIndent(int depth) {
+        for (int i = 0; i < depth; i++) {
+            System.out.print("    "); // Adjust the number of spaces for indentation
+        }
+    }
+
+    public static void printWindowsUsers2() {
+        Netapi32 netapi32 = Netapi32.INSTANCE;
+        // Set the level of detail for the user information
+        int level = 1; // Use level 1 for basic user information
+        // Set the preferred maximum length of the returned data
+        int prefmaxlen = -1; // Use -1 for maximum length
+        // Pointer to the buffer that receives the data
+        PointerByReference pBuf = new PointerByReference();
+        // Pointer to the total number of entries in the result set
+        IntByReference entriesread = new IntByReference();
+        // Pointer to the total number of entries that could have been enumerated
+        IntByReference totalentries = new IntByReference();
+        int result = netapi32.NetUserEnum(null, level, 0, pBuf, prefmaxlen, entriesread, totalentries, null);
+        if (result == WinError.ERROR_SUCCESS) {
+            LMAccess.USER_INFO_1 user_info = new LMAccess.USER_INFO_1(pBuf.getValue());
+            System.out.println("Users:");
+            for (int i = 0; i < entriesread.getValue(); i++) {
+                String userName = user_info.usri1_name;
+
+                // Use NetUserGetInfo to get extended information about each user
+                PointerByReference pInfoBuf = new PointerByReference();
+                result = netapi32.NetUserGetInfo(null, userName, 23, pInfoBuf);
+
+                if (result == WinError.ERROR_SUCCESS) {
+                    LMAccess.USER_INFO_23 extendedUserInfo = new LMAccess.USER_INFO_23(pInfoBuf.getValue());
+
+                    // Print extended information
+                    System.out.println("User Name: " + extendedUserInfo.usri23_name);
+                    System.out.println("Full Name: " + extendedUserInfo.usri23_full_name);
+                    System.out.println("Comment: " + extendedUserInfo.usri23_comment);
+                    // Print additional attributes available in USER_INFO_23
+
+                    System.out.println("-----------------------------------------------------------");
+                    netapi32.NetApiBufferFree(pInfoBuf.getValue()); // Free the buffer
+                } else {
+                    System.err.println("Error: " + result);
+                }
+            }
+        }
+    }
+    */
 }
